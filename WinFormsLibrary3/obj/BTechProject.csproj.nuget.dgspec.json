@@ -1,0 +1,47 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\tejas\\source\\repos\\WinFormsLibrary3\\BTechProject.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\tejas\\source\\repos\\WinFormsLibrary3\\BTechProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tejas\\source\\repos\\WinFormsLibrary3\\BTechProject.csproj",
+        "projectName": "BTechProject",
+        "projectPath": "C:\\Users\\tejas\\source\\repos\\WinFormsLibrary3\\BTechProject.csproj",
+        "packagesPath": "C:\\Users\\tejas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tejas\\source\\repos\\WinFormsLibrary3\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tejas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

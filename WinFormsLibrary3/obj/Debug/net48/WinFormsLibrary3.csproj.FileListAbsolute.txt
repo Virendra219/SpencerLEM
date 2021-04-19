@@ -1,0 +1,10 @@
+C:\Users\tejas\source\repos\WinFormsLibrary3\bin\Debug\net48\WinFormsLibrary3.dll
+C:\Users\tejas\source\repos\WinFormsLibrary3\bin\Debug\net48\WinFormsLibrary3.pdb
+C:\Users\tejas\source\repos\WinFormsLibrary3\obj\Debug\net48\WinFormsLibrary3.Form1.resources
+C:\Users\tejas\source\repos\WinFormsLibrary3\obj\Debug\net48\WinFormsLibrary3.csproj.GenerateResource.cache
+C:\Users\tejas\source\repos\WinFormsLibrary3\obj\Debug\net48\WinFormsLibrary3.AssemblyInfoInputs.cache
+C:\Users\tejas\source\repos\WinFormsLibrary3\obj\Debug\net48\WinFormsLibrary3.AssemblyInfo.cs
+C:\Users\tejas\source\repos\WinFormsLibrary3\obj\Debug\net48\WinFormsLibrary3.csproj.CoreCompileInputs.cache
+C:\Users\tejas\source\repos\WinFormsLibrary3\obj\Debug\net48\WinFormsLibrary3.dll
+C:\Users\tejas\source\repos\WinFormsLibrary3\obj\Debug\net48\WinFormsLibrary3.pdb
+C:\Users\tejas\source\repos\WinFormsLibrary3\obj\Debug\net48\WinFormsLibrary3.csprojAssemblyReference.cache
