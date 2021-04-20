@@ -7,3 +7,4 @@ C:\Users\tejas\source\repos\WinFormsLibrary3\obj\Debug\net48\BTechProject.Assemb
 C:\Users\tejas\source\repos\WinFormsLibrary3\obj\Debug\net48\BTechProject.csproj.CoreCompileInputs.cache
 C:\Users\tejas\source\repos\WinFormsLibrary3\obj\Debug\net48\BTechProject.dll
 C:\Users\tejas\source\repos\WinFormsLibrary3\obj\Debug\net48\BTechProject.pdb
+C:\Users\tejas\source\repos\WinFormsLibrary3\obj\Debug\net48\BTechProject.csprojAssemblyReference.cache

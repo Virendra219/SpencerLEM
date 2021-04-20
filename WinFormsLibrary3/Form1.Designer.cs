@@ -200,7 +200,7 @@ namespace WinFormsLibrary3
             this.radTC.Name = "radTC";
             this.radTC.Size = new System.Drawing.Size(118, 22);
             this.radTC.TabIndex = 3;
-            this.radTC.Text = "74.981";
+            this.radTC.Text = "76";
             // 
             // Radius
             // 
@@ -296,9 +296,9 @@ namespace WinFormsLibrary3
             this.Cohes.AutoSize = true;
             this.Cohes.Location = new System.Drawing.Point(6, 73);
             this.Cohes.Name = "Cohes";
-            this.Cohes.Size = new System.Drawing.Size(67, 17);
+            this.Cohes.Size = new System.Drawing.Size(125, 17);
             this.Cohes.TabIndex = 21;
-            this.Cohes.Text = "Cohesion";
+            this.Cohes.Text = "Cohesion (N/cu.m)";
             // 
             // Bden
             // 
@@ -314,9 +314,9 @@ namespace WinFormsLibrary3
             this.BulkDenisty.AutoSize = true;
             this.BulkDenisty.Location = new System.Drawing.Point(6, 33);
             this.BulkDenisty.Name = "BulkDenisty";
-            this.BulkDenisty.Size = new System.Drawing.Size(84, 17);
+            this.BulkDenisty.Size = new System.Drawing.Size(142, 17);
             this.BulkDenisty.TabIndex = 20;
-            this.BulkDenisty.Text = "Bulk density";
+            this.BulkDenisty.Text = "Bulk density (N/cu.m)\r\n";
             // 
             // DrawSlope
             // 

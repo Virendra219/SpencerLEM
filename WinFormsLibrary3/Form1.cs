@@ -52,7 +52,7 @@ namespace WinFormsLibrary3
             bwid = Convert.ToDouble(this.BWidth.Text); // reading the bench width from BWidth textbox.
             double x1 = x + bwid;
             SlopePts[1] = new Point3d(x1, y, z); //storing coordinates of B.
-
+            
             bhigh = Convert.ToDouble(this.BHeight.Text); // reading the bench height from BHeight textbox.
             BetaDeg = Convert.ToDouble(this.SAngle.Text); // reading the angle of embankment in degrees from SAngle textbox.
             Beta = BetaDeg * pi / 180; // converting it to radians
@@ -242,12 +242,11 @@ namespace WinFormsLibrary3
         // and returns a 2d array of 3d points which are coordinates of end points of boundary b/w adjacent slices.
         public Point3d[,] SlicesData(Point3d pt0, Point3d ptn, Point3d centre, double radius)
         {
-            double[,] slicesData = new double[4,n]; // 1st row for x coordinates of points on slope, 2nd row for y coordinates of points on slope.
+            double[,] slicesData = new double[3,n]; // 1st row for x coordinates of points on slope, 2nd row for y coordinates of points on slope.
                                                     // 3rd row for x coordinates of points on curve, 4th row for y coordinates of points on curve.
             slicesData[0, 0] = pt0.X;
             slicesData[1, 0] = pt0.Y; // x, y coordinates of 1st point on slope.
-            slicesData[2, 0] = pt0.X;
-            slicesData[3, 0] = pt0.Y; // x, y coordinates of 1st point on the curve.
+            slicesData[2, 0] = pt0.Y; // x, y coordinates of 1st point on the curve.
             double dx = (ptn.X - pt0.X) / (n-1);
             double x1 = SlopePts[1].X;
             double y1 = SlopePts[1].Y; 
@@ -260,7 +259,6 @@ namespace WinFormsLibrary3
             for (int i=1; i<n; i++)
             {
                 slicesData[0, i] = slicesData[0, i - 1] + dx; // storing x coordinates of i+1th point on the slope and the curve,
-                slicesData[2, i] = slicesData[2, i - 1] + dx;
                 if (slicesData[0, i] <= x1) // checking conditions for position of i+1th point on slope and storing y coordinates.
                     slicesData[1, i] = y1;
                 else if (slicesData[0, i] >= x2)
@@ -268,13 +266,13 @@ namespace WinFormsLibrary3
                 else
                     slicesData[1, i] = y1 - (slicesData[0, i] - x1) * Math.Tan(Beta);
                 // storing y coordinates of i+1th point on curve.
-                slicesData[3, i] = centre.Y - Math.Sqrt(Math.Pow(radius, 2) - Math.Pow(slicesData[2, i] - centre.X, 2));
+                slicesData[2, i] = centre.Y - Math.Sqrt(Math.Pow(radius, 2) - Math.Pow(slicesData[0, i] - centre.X, 2));
                  
                 sliceCo[0, i] = new Point3d(slicesData[0, i], slicesData[1, i], z); //storing the i+1th point on slope.
-                sliceCo[1, i] = new Point3d(slicesData[2, i], slicesData[3, i], z); //storing the i+1th point on the curve.
+                sliceCo[1, i] = new Point3d(slicesData[0, i], slicesData[2, i], z); //storing the i+1th point on the curve.
             }
             sliceCo[0, 0] = new Point3d(slicesData[0, 0], slicesData[1, 0], z); //1st point on slope.
-            sliceCo[1, 0] = new Point3d(slicesData[2, 0], slicesData[3, 0], z); //1st point on curve.
+            sliceCo[1, 0] = new Point3d(slicesData[0, 0], slicesData[2, 0], z); //1st point on curve.
 
             return sliceCo;
         }
